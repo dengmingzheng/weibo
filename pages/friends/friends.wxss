@@ -1,0 +1,111 @@
+.container{
+  padding: 20rpx;
+  background-color: #f2f2f2;
+}
+
+.friend-group{
+  width: 100%;
+  background-color: #ffffff;
+  margin-bottom: 20rpx;
+}
+
+.friend-group .content{
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  text-indent:20rpx;
+}
+
+.friend-group .user-group{
+  display: flex;
+}
+
+.friend-group .user-group .user-avater{
+  width: 74rpx;
+  height: 74rpx;
+  border-radius: 50%;
+}
+
+.friend-group .user-group .username-group{
+  flex: 1;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.friend-group .user-group .username-group .username{
+  font-size: 28rpx;
+}
+
+.friend-group .user-group .username-group .detail-group{
+  display: flex;
+  font-size: 24rpx;
+}
+
+.friend-group .user-group .username-group .detail-group .detail-time{
+  margin-right: 20rpx;
+}
+
+.images-group{
+  padding-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.images-group video{
+  width: 100%;
+}
+
+.images-group image{
+  margin-bottom: 5rpx;
+}
+
+.comment-box{
+  display: flex;
+  padding: 20rpx 0;
+}
+
+.comment-box .comment-group{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-box .comment-group .comment-image{
+   width: 40rpx;
+   height: 40rpx;
+}
+
+.comment-box .praise-group{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comment-box .praise-group .praise-image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.write-weibo-btn{
+  position: fixed;
+  right: 50rpx;
+  bottom: 100rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background: rgb(116, 194, 223);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100rpx;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.write-weibo-btn view{
+  margin-top: -16rpx;
+}

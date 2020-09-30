@@ -1,0 +1,20 @@
+{
+  "pages":[
+   
+    "pages/login/login",
+    "pages/friends/friends",
+    "pages/publish/publish",
+    "pages/index/index",
+    "pages/demo/demo",
+   
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微博",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,29 @@
+<view class="container">
+     <form data-type="{{type}}" bindsubmit="onSubmitEvent">
+
+        <!-- 文字开始 -->
+        <textarea name="content" class="textarea-view" placeholder="请发表你的心情"></textarea>
+        <!-- 文字结束 -->
+
+        <!-- 图片开始 -->
+        <view class="image-list-group" wx:if="{{type == 1}}">
+          <view class="image-list" wx:if="{{tempFilePaths.length > 0}}" wx:for="{{tempFilePaths}}" wx:key="*this" style="width:{{imageSize}}rpx;height:{{imageSize}}rpx">
+             <image class="item-image" src="{{item}}" bindtap="onPreviewImageEvent" data-index="{{index}}"></image>
+             <view class="remove-image" data-index="{{index}}" catchtap="onRemoveImageEvent"></view>
+          </view>
+          
+          <view class="add-image-btn" wx:if="{{tempFilePaths.length < 9}}" catchtap="onAddImageEvent" style="width:{{imageSize}}rpx;height:{{imageSize}}rpx">
+             <view>+</view>
+          </view>
+        </view>
+        <!-- 图片结束 -->
+
+        <!-- 视频开始 -->
+        <view wx:if="{{type == 2}}">
+            <video src='{{videoPath}}'></video>
+        </view>
+         <!-- 视频结束 -->
+
+        <button type="primary" form-type="submit" style="width:100%; margin-top:40rpx">发布</button>
+     </form>
+</view>

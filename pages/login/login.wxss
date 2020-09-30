@@ -1,0 +1,21 @@
+.container{
+  padding: 0 40rpx;
+}
+
+.container .login-group{
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .login-group .logo{
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.container .login-group .wx-mobile,.container .login-group .mobile{
+  width: 100%;
+  margin-bottom: 20rpx;
+}

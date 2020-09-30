@@ -1,0 +1,95 @@
+<view class="container">
+     
+    <block wx:for="{{items}}" wx:key="*this">
+       <!-- 内容盒子开始  -->
+       <view class="friend-group">
+         <!-- 用户信息开始 -->
+         <view class="user-group">
+             <image class="user-avater" src="../../images/avatar.jpg"></image>
+             <view class="username-group">
+                  <view class="username">dengmingzheng</view>
+                  <view class="detail-group">
+                      <view class="detail-time">2020-12-12 14:23:25</view>
+                      <view class="detail-from">来自Iphone8X</view>
+                  </view>
+             </view>
+         </view>
+         <!-- 用户信息结束 -->
+         
+         <!-- 内容区域开始 -->
+         <view class="content">2013年2月英超联赛，我刺主场对阵纽卡斯尔联，上半场贝尔任意球破门，占据领先优势；被对手扳平后，比赛第78分钟，贝尔在防守队员中心挑球过人，追上球之后直接破门，2-1战胜喜鹊！</view>
+         <!-- 内容区域结束 -->
+
+         <!-- 图片展示区域开始 -->
+         <view class="images-group">
+            <block wx:for="{{items}}" wx:key="*this">
+              <image mode="aspectFill" style="width:{{imageWidth}}px; max-height:{{imageWidth}}px;" src="https://wx4.sinaimg.cn/mw690/001nARUfly1gj37d9kdljj61hc0u04qp02.jpg"></image>
+            </block>
+         </view>
+         <!-- 图片展示区域结束 -->
+
+         <!-- 评论区域开始 -->
+         <view class="comment-box">
+            <view class="comment-group">
+              <image src="../../images/comment.png" class="comment-image"></image>
+              <view class="conment-text">评论</view>
+            </view>
+            
+            <view class="praise-group">
+              <image src="../../images/praise.png" class="praise-image"></image>
+              <view class="praise-text">赞</view>
+            </view>
+         </view>
+         <!-- 评论区域结束 -->
+      </view>
+      <!-- 内容盒子结束 -->
+    </block>
+     
+
+
+        <!-- 視頻  -->
+      <!-- 内容盒子开始  -->
+      <view class="friend-group">
+         <!-- 用户信息开始 -->
+         <view class="user-group">
+             <image class="user-avater" src="../../images/avatar.jpg"></image>
+             <view class="username-group">
+                  <view class="username">dengmingzheng</view>
+                  <view class="detail-group">
+                      <view class="detail-time">2020-12-12 14:23:25</view>
+                      <view class="detail-from">来自Iphone8X</view>
+                  </view>
+             </view>
+         </view>
+         <!-- 用户信息结束 -->
+         
+         <!-- 内容区域开始 -->
+         <view class="content">2013年2月英超联赛，我刺主场对阵纽卡斯尔联，上半场贝尔任意球破门，占据领先优势；被对手扳平后，比赛第78分钟，贝尔在防守队员中心挑球过人，追上球之后直接破门，2-1战胜喜鹊！</view>
+         <!-- 内容区域结束 -->
+
+         <!-- 图片展示区域开始 -->
+         <view class="images-group">
+          <video src="https://www.bilibili.com/video/BV1Rx411A7UB/"></video>
+         </view>
+         <!-- 图片展示区域结束 -->
+
+         <!-- 评论区域开始 -->
+         <view class="comment-box">
+            <view class="comment-group">
+              <image src="../../images/comment.png" class="comment-image"></image>
+              <view class="conment-text">评论</view>
+            </view>
+            
+            <view class="praise-group">
+              <image src="../../images/praise.png" class="praise-image"></image>
+              <view class="praise-text">赞</view>
+            </view>
+         </view>
+         <!-- 评论区域结束 -->
+      </view>
+      <!-- 内容盒子结束 -->
+</view>
+
+<view class="write-weibo-btn" bind:tap="onWriteWeiboTap">
+  <view>+</view>
+</view>
